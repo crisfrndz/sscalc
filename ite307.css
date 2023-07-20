@@ -37,6 +37,9 @@ input{
     padding: 1rem;
     border-radius: 1rem;
 }
+input:focus{
+    outline: #f17100 1px solid;
+}
 #compute{
     font-size: 2rem;
     width: 50%;

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cris</title>
+    <link rel="stylesheet" href="ite307.css" />
+    <script src="ite307.js"></script>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="middle">
+            <h1 class="title">Sample Size Calculator</h1>
+            <p class="make">&#169;Cristian Fernandez</p>
+            <label for="confidence">Confidence Level (%)</label>
+            <input type="text" id="confidence" />
+            <label for="zscore">Z-Score</label>
+            <input type="text" id="zscore" />
+            <label for="sd">Standard Deviation</label>
+            <input type="text" id="sd" />
+            <label for="moe">Margin of Error (%)</label>
+            <input type="text" id="moe" />
+            <label for="moe">Population Size [type 0 (zero) if unavailable]</label>
+            <input type="text" id="ps" />
+            <button id="compute" onclick="computeSampleSize()">Compute</button>
+            <div class="ans">
+                <p id="ss"></p>
+                <p id="rss"></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

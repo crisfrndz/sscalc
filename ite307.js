@@ -21,8 +21,8 @@ function computeSampleSize() {
         Math.round(ss)
     );
   } else if (n > 0) {
-    let top = (z * z * p * (1 - p)) / (e * e);
-    let bot = (1 + z * z * p * (1 - p)) / (e * e * n);
+    let top = ((z * z) * p * (1 - p)) / (e * e);
+    let bot = (1 + (z * z) * p * (1 - p)) / ((e * e) * n);
     let ss = top / bot;
     document.getElementById("ss").innerHTML = "Sample size: "+ ss.toFixed(2);
     document.getElementById("rss").innerHTML = "Rounded Sample size: "+ Math.round(ss);

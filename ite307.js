@@ -6,7 +6,12 @@ function computeSampleSize() {
   if (n == 0) {
     let ss = (z * z * p * (1 - p)) / (e * e);
     document.getElementById("ss").innerHTML = "Sample size: "+ ss.toFixed(2);
-    document.getElementById("rss").innerHTML = "Sample size: "+ Math.round(ss);
+    document.getElementById("rss").innerHTML = " Rounded Sample size: "+ Math.round(ss);
+    document.getElementById("xzscore").innerHTML = z;
+    document.getElementById("xsd").innerHTML = p;
+    document.getElementById("xsd2").innerHTML = p;
+    document.getElementById("xmoe").innerHTML = e; 
+    document.getElementById("solution1").style.display = "block";
 
     alert(
       "Sample size: " +
